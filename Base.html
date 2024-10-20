@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robo Raiders</title>
+  <link rel="stylesheet" href="Base.css">
+</head>
+
+<body>
+  <div class="background" id="background"></div>
+
+  <div class="header" id="header">
+    Cache
+  </div>
+
+  <div class="content">
+    <div class="section">
+      <h1>Welcome to My Website</h1>
+      <p>You may use this website if you don't have time to play all of our games, and just want to find our caches. If that is you're case, please feel free to explore the other parts of our website. If however you do have some extra time to waste, go try our games at(Game link)</p>
+    </div>
+
+    <div class="section">
+      <h1>Cache 1</h1>
+      <a href="Cache1.html" >Click Here To Go To The Directions Of The First Cache</a>
+    </div>
+
+    <div class="section">
+      <h1>Cache 2</h1>
+      <a href="Cache2.html" >Click Here To Go To The Directions Of The Second Cache</a>
+    </div>
+
+    <div class="section">
+      <h1>Cache 3</h1>
+      <a href="Cache3.html" >Click Here To Go To The Directions Of The Third Cache</a>
+    </div>
+  </div>
+  <script>
+    // Fade-in effect for the background image on page load
+    window.onload = function() {
+      const background = document.getElementById('background');
+      background.style.opacity = 1; // Trigger fade-in
+    };
+
+    // Fade the header background on scroll
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 10) { // Start fading after scrolling 10px
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>

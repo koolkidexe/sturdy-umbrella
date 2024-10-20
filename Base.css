@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    position: relative;
+    min-height: 2000px; /* Ensure the page is tall enough to scroll */
+  }
+
+  /* Background Image Fade-in */
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/Oceanpic.jpeg'); /* Your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 2s ease-in-out; /* Fade-in effect */
+    z-index: -1; /* Behind content */
+  }
+
+  /* Header Style */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 204, 255); /* Solid color initially */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    transition: background-color 0.3s ease; /* Smooth transition for scrolling */
+    z-index: 1000; /* Ensures it stays on top */
+  }
+
+  .scrolled {
+    background-color: rgba(0, 128, 255, 0); /* Transparent when scrolled */
+  }
+
+  /* Main Content */
+  .content {
+    margin-top: 80px; /* Avoid content being hidden under the fixed header */
+    padding: 20px;
+    z-index: 1; /* Ensure content is above the background */
+  }
+
+  .section {
+    color: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgb(28, 176, 184);
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h1, h1 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-family: cutive mono;
+    line-height: 1.6;
+    font-size: 35px;
+    padding-top: 7px;
+  }
+
+  a {
+    font-family: cutive mono;
+    font-size: 27px;
+    color: beige;
+  }
